@@ -1,0 +1,25 @@
+
+
+.container{
+	background-color: #fd0dc9;
+}
+
+.container h2,p{
+	text-align: center;
+}
+
+.tombol{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 100px; 
+}
+
+.tombol-1{
+	margin-left: 300px;
+
+}
+
+.tombol-2{
+	margin-right: 300px;
+}
+

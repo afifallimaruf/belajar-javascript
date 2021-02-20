@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan Array</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<h2>Memasukan input dari user ke dalam arrays</h2>
+	<button class="btn btn-primary" onclick="input()">Masukan</button>
+	<button class="btn btn-primary" onclick="nambahLagi()">Tambah</button>
+	<!-- Masukan Buah: <br>
+	<input type="text" name="masukan">
+	<button onclick="input()">Kirim</button> -->
+
+
+
+<script type="text/javascript">
+	
+	// var buahBuahan = [];
+
+	// function input(){
+	// 	let masukan = prompt('Masukan Buah: ');
+	// 	buahBuahan.push(masukan);
+	// 	console.log(buahBuahan);
+	// }
+
+
+	// function nambahLagi(){
+	// 	input();
+
+	// }
+	// var hasil = prompt("Masukan Angka: ");
+	// for(var num1 = 0; num1 <= 10000; num1++){
+	// 	for(var num2 = 0; num2 <= 10000; num2++){
+	// 		if(num1*num2 == hasil){
+	// 			var hasilAkhir = console.log(num1+'*'+num2);	
+	// 		}
+	// 	}
+
+	// }
+
+	var mhs = {
+		nama: 'Afif',
+		nim: 'A2.1800007',
+		gabung : function(){
+			return this.nama+' '+this.nim;
+		}
+	};
+
+
+	// console.log('Nama: '+ mhs.nama);
+	// console.log('NIM: '+ mhs.nim);
+	// console.log(mhs.gabung());
+
+	
+
+
+	var Buah = function(namaBuah, namaIlmiah, harga){
+
+		this.namaBuah = namaBuah;
+		this.namaIlmiah = namaIlmiah;
+		this.harga = harga;
+	}
+
+	var namaBuah = prompt('Masukan Nama Buah: ');
+	var namaIlmiah = prompt('Masukan Nama Ilmiahnya: ');
+	var harga = parseInt(prompt('Masukan Harga: '));
+
+	var buah = new  Buah(namaBuah, namaIlmiah, harga);
+	var buah2 = new  Buah(namaBuah, namaIlmiah, harga);
+
+	// console.log(buah.namaBuah);
+	// console.log(buah.namaIlmiah);
+
+
+
+
+	
+
+</script>
+</body>
+</html>

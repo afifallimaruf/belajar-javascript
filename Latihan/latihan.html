@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan Array</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h2>Mengurutkan Bilangan dari yang terkecil</h2>
+		<p id="angka"></p>
+		<div class="tombol">
+			<button class="btn btn-primary tombol-1" onclick="mengurutkan()">Urutkan</button>
+			<button class="btn btn-warning tombol-2" onclick="kembali()">Reset</button>
+		</div>
+	</div>
+	
+
+
+<script type="text/javascript">
+	var nilai = [60, 80, 70, 90, 50, 100];
+	document.getElementById('angka').innerHTML=nilai;
+
+	
+
+	function mengurutkan(){
+		nilai.sort(function(a,b){return a-b});
+		document.getElementById('angka').innerHTML=nilai; 
+	}
+
+	function kembali(){
+		nilai = [60, 80, 70, 90, 50, 100];
+		document.getElementById('angka').innerHTML=nilai;
+	}
+
+</script>
+</body>
+</html>
